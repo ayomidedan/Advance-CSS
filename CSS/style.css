@@ -1,0 +1,173 @@
+body{
+	background: rgba(186, 212, 255, 0.5);
+}
+
+p{
+	font-family:'lato', sans-serif;
+}
+
+h1{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3{
+	font-family: 'lato', sans-serif;
+}
+
+li{
+	font-family: 'lato', sans-serif;
+}
+
+h1{
+	text-transform: capitalize;
+	background:radial-gradient(circle, coral 50%, red 20%, yellow 30%, orange 20%);
+	transition: all 2s ease;
+}
+
+h1:hover{
+	padding: 30px 50px;
+}
+
+#main{
+	display: grid;
+	grid-template-columns: 55% 40%;
+	grid-gap: 50px;
+	width: 100%;
+}
+
+
+img	{
+	width: 300px;
+	height: 200px;
+}
+
+.images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.images >img{
+	margin: 10px;
+	transition: all 500ms ease;
+}
+
+.images img:hover{
+	padding: 20px 30px;
+}
+
+.para-1 >img{
+	float: right;
+	height: 150px;
+	width: 200px;
+	marks: 15px;
+	transition: all 500ms ease;
+}
+
+.para-1 >img:hover{
+	padding: 20px 10px;
+}
+
+.container{
+	background: rgb(255, 227, 191);
+	margin-top: none;
+	text-align: center;
+}
+
+#post-1{
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+	/*	text-transform: uppercase;
+	color:#fff;
+	animation-name: red-to-black;
+	animation-duration:5s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;*/
+	   /*or*/
+	animation: blue-yellow-green-red 20s linear infinite alternate;
+}
+
+#post-2{
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+}
+
+#post-3{
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+	transition: all 500ms ease;
+}
+
+#post-3:hover{
+	padding: 20px 30px;
+}
+
+#post-4{
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+}
+
+#post-5{
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+}
+
+#post-6{
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+	animation: blue-yellow-green-red 10s linear infinite alternate;
+}
+
+a{
+	text-align: center;
+	text-decoration:none;
+}
+
+a:hover{
+	color:white;
+}
+
+@keyframes blue-yellow-green-red{
+	0%{
+		background: blue;
+		transform: translate(0px, 0px);
+	}
+
+	40%{
+		background: yellow;
+		transform: translate(0px, 0px); 
+	}
+
+	70%{
+		background: green;
+		transform: translate(0px, 0px);
+	}
+
+	100%{
+		background: red;
+		transform: translate(0px, 0px);
+	}
+}
+
+/*@keyframes red-to-black{
+	0%{
+		background:red;
+		transform:translate(0px, 0px);
+	}
+
+	50%{
+		background:yellow;
+		transform:translate(10px, 10px);
+	}
+
+	100%{
+		background:black;
+		transform:translate(20px, 20px);
+	}
+}*/
